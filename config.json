@@ -1,0 +1,14 @@
+{
+  "input": "./gallery",
+  "output": "./build_output",
+  "title": "UKÁŽKA PRÁCE SPOLOČNOSTI ARTENOM S.R.O.",
+  "sort-albums-by": "title",
+  "sort-media-by": "filename",
+  "download-photos": "copy",
+  "cleanup": true,
+  "theme-path": "./theme",
+  "css": "./custom.css",
+  "album-previews": "spread",
+  "footer": "© yoyanec",
+  "google-analytics": "G-SKYC0BX5V7"
+}

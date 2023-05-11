@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>artenom.s.r.o - {{album.title}}</title>
+      <meta name="description" content="Ukážky prác, ktoré pre nás vykonala spoločnosť Artenom s.r.o." />
+      <meta name="keywords" content="artenom, vlha, vlhova, stavba, dom, stavebne prace, chyby, nedorobky, vady, meskanie, zdrazovanie, nedodrzanie terminov, kupeckeho, rekonstrukcia" />
+      <link rel="stylesheet" href="{{relative 'public/lightgallery/css/lightgallery.css'}}" />
+      <link rel="stylesheet" href="{{relative 'public/videojs/video-js.min.css'}}" />
+      <link rel="stylesheet" href="{{relative 'public/lightgallery/css/lg-exif.min.css'}}" />
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+	    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+      <link rel="stylesheet" href="{{relative 'public/custom.css'}}">
+
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container px-4 px-lg-5">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="{{relative 'index.html'}}">Ukážky prác</a></li>
+              <li class="nav-item"><a class="nav-link" href="{{relative 'public/about.html'}}">O spoločnosti</a></li>
+              <li class="nav-item"><a class="nav-link" href="{{relative 'public/contact.html'}}">Kontakt</a></li>
+          </ul>
+      </div>
+    </div>
+  </nav>
+
+    {{> content}}
+    {{> video-loader}}
+
+  <footer class="py-5 bg-dark">
+      <div class="container"><p class="m-0 text-center text-white">Copyright &copy; yoyanec 2023</p></div>
+  </footer>
+    <script src="{{relative 'public/jquery.min.js'}}"></script>
+    <script src="{{relative 'public/videojs/video.min.js'}}"></script>
+    <script src="{{relative 'public/lightgallery/js/lightgallery-all.min.js'}}"></script>
+    <script src="{{relative 'public/lightgallery/js/lg-exif.min.js'}}"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#media").lightGallery({
+          thumbWidth: 80,
+          controls: true,
+          loop : false,
+          download: false,
+          counter: false,
+          videojs: true,
+          fullScreen: true,
+          zoom: true
+        });
+      });
+    </script>
+
+    {{> analytics}}
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
+
